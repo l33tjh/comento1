@@ -1,17 +1,6 @@
-<configuration xmlns="http://mybatis.org/schema/mybatis">
-<dataSource type="POOLED">
-    <property name="driver" value="com.mysql.cj.jdbc.Driver" />
-    <property name="url" value="jdbc:mysql://localhost:3306/pot" />
-    <property name="username" value="root" />
-    <property name="password" value="rootroot" />
-</dataSource>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<!-- SQLSessionFactory 설정 -->
-<sqlSessionFactory type="org.mybatis.spring.SqlSessionFactoryBean">
-    <property name="dataSource" ref="dataSource" />
-    <property name="mapperLocations" value="classpath:com/example/mappers/*.xml" />
-</sqlSessionFactory>
-
-<!-- 매퍼 스캔 설정 -->
-<package name="com.example.mappers" />
-</configuration>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+ 

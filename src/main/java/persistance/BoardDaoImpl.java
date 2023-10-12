@@ -12,7 +12,7 @@ public class BoardDaoImpl implements BoardDAO {
 	
 	@Inject
 	private SqlSession session;
-	private static String namespace = "com.myp.mapper.BoardMapper";
+	private static String namespace = "com.mapper.board-Mapper";
 	
 	@Override
 	public void create(BoardVO vo) throws Exception {
